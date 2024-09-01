@@ -76,3 +76,10 @@ progress{
 p{
     margin-bottom: 50px;
 }
+a:hover {
+    text-decoration: underline; /* Underline on hover */
+}
+
+a:active {
+    color: blue; /* Blue text color when active */
+}
