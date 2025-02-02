@@ -1,167 +1,745 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio (Jaya Surya Prakash R)</title>
-    <link rel="icon" type="image/x-icon" href="profile_picture.jpg">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <link rel="stylesheet" href="Task7.css" />
-    <style>
-        .progress-container {
-            display: flex;
-            align-items: center;
-            margin-bottom: 10px;
-        }
-        .progress-label {
-            width: 25%;
-            text-align: right;
-            padding-right: 10px;
-        }
-        .progress-bars {
-            flex-grow: 1;
-            height: 15px;
-            margin-right: 10%;
-            margin-left: 5%;
-        }
-    </style>
-</head>
-<body>
-    <div class="container border my-4 p-3">
-        <div class="row mb-3 text-center">
-            <div class="col-md-3">
-                <img class="profile-picture img-fluid" src="./profile picture.jpg" alt="profile picture" />
-                <h2 class="mt-2">JAYA SURYA PRAKASH R</h2>
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>JSP Portfolio</title>
+    <meta content="" name="description" />
+    <meta content="" name="keywords" />
+
+    <!-- Favicons -->
+    <link href="assets/img/favicon.png" rel="icon" />
+    <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon" />
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Vendor CSS Files -->
+    <link
+      href="assets/vendor/bootstrap/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="assets/vendor/bootstrap-icons/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+    <link href="assets/vendor/aos/aos.css" rel="stylesheet" />
+    <link
+      href="assets/vendor/glightbox/css/glightbox.min.css"
+      rel="stylesheet"
+    />
+    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet" />
+
+    <!-- Main CSS File -->
+    <link href="assets/css/main.css" rel="stylesheet" />
+
+    <!-- =======================================================
+  * Template Name: iPortfolio
+  * Template URL: https://bootstrapmade.com/iportfolio-bootstrap-portfolio-websites-template/
+  * Updated: Jun 29 2024 with Bootstrap v5.3.3
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+  </head>
+
+  <body class="index-page">
+    <header id="header" class="header dark-background d-flex flex-column">
+      <i class="header-toggle d-xl-none bi bi-list"></i>
+
+      <div class="profile-img">
+        <img
+          src="assets/img/my-profile-img.jpg"
+          alt=""
+          class="img-fluid rounded-circle"
+        />
+      </div>
+
+      <a
+        href="index.html"
+        class="logo d-flex align-items-center justify-content-center"
+      >
+        <!-- Uncomment the line below if you also wish to use an image logo -->
+        <!-- <img src="assets/img/logo.png" alt=""> -->
+        <h1 class="sitename">Jaya Surya Prakash Ramalingam</h1>
+      </a>
+
+      <div class="social-links text-center">
+        <a
+          href="https://github.com/JAYASURYAJSP03"
+          target="_blank"
+          class="google-plus"
+          ><i class="bi bi-github"></i
+        ></a>
+        <a
+          href="https://www.linkedin.com/in/jaya-surya-prakash-ramalingam-611899256/"
+          target="_blank"
+          class="linkedin"
+          ><i class="bi bi-linkedin"></i
+        ></a>
+      </div>
+
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li>
+            <a href="#hero" class="active"
+              ><i class="bi bi-house navicon"></i>Home</a
+            >
+          </li>
+          <li>
+            <a href="#about"><i class="bi bi-person navicon"></i> About</a>
+          </li>
+          <li>
+            <a href="#skills"><i class="bi bi-tools navicon"></i> Skills</a>
+          </li>
+          <li>
+            <a href="#resume"
+              ><i class="bi bi-file-earmark-text navicon"></i> Resume</a
+            >
+          </li>
+          <li>
+            <a href="#project">
+              <i class="bi bi-kanban navicon"></i> Projects
+            </a>            
+          </li>
+          <!-- <li class="dropdown"><a href="#"><i class="bi bi-menu-button navicon"></i> <span>Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a> -->
+          <!-- <ul>
+            <li><a href="#">Dropdown 1</a></li>
+            <li class="dropdown"><a href="#"><span>Deep Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+              <ul>
+                <li><a href="#">Deep Dropdown 1</a></li>
+                <li><a href="#">Deep Dropdown 2</a></li>
+                <li><a href="#">Deep Dropdown 3</a></li>
+                <li><a href="#">Deep Dropdown 4</a></li>
+                <li><a href="#">Deep Dropdown 5</a></li>
+              </ul>
+            </li>
+            <li><a href="#">Dropdown 2</a></li>
+            <li><a href="#">Dropdown 3</a></li>
+            <li><a href="#">Dropdown 4</a></li>
+          </ul>
+        </li> -->
+          <li>
+            <a href="#contact"
+              ><i class="bi bi-envelope navicon"></i> Contact</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="main">
+      <!-- Hero Section -->
+      <section id="hero" class="hero section dark-background">
+        <img src="assets/img/hero-bg.jpg" alt="" data-aos="fade-up" class="" />
+
+        <div class="container" data-aos="fade-up" data-aos-delay="100">
+          <h2>Jaya Surya Prakash Ramalingam</h2>
+          <p>
+            <b
+              >I'm a
+              <span
+                class="typed"
+                data-typed-items="Developer, Freelancer ,Designer "
+                >Developer</span
+              ><span
+                class="typed-cursor typed-cursor--blink"
+                aria-hidden="true"
+              ></span
+              ><span
+                class="typed-cursor typed-cursor--blink"
+                aria-hidden="true"
+              ></span
+            ></b>
+          </p>
+        </div>
+      </section>
+      <!-- /Hero Section -->
+
+      <!-- About Section -->
+      <section id="about" class="about section">
+        <!-- Section Title -->
+        <div class="container section-title" data-aos="fade-up">
+          <h2>About</h2>
+          <p>
+            I am enthusiastic about technology and have strong technical skills,
+            as well as interpersonal and problem solving abilities, for working
+            effectively in a team.I have a strong curiosity for how things work
+            and how they can be improved. I enjoy applying my knowledge and
+            skills to create solutions for various domains.
+          </p>
+        </div>
+        <!-- End Section Title -->
+
+        <div class="container" data-aos="fade-up" data-aos-delay="100">
+          <div class="row gy-4 justify-content-center">
+            <div class="col-lg-4">
+              <img
+                src="assets/img/my-profile-img.jpg"
+                class="img-fluid"
+                alt=""
+              />
             </div>
-            <div class="col-md-9 align-self-center">
-                <p class="info-para">
-                    <b>Jaya Surya Prakash R |</b>
-                    <a href="tel:+919159697001" class="text-dark text-decoration-none" title="To call us, Click here">
-                        <img src="./dialer-logo.png" alt="dialer-logo" style="height: 20px;"> +91 9159697001 |
-                    </a>
-                    <a href="mailto:jayasuryaprakashr@gmail.com" class="text-dark text-decoration-none" title="To contact, Click here">
-                        <img src="./mail-logo.png" alt="mail-logo" style="height: 20px; margin-top: 5px;"> jayasuryaprakashr@gmail.com |
-                    </a>
-                    <a href="https://www.linkedin.com/in/jaya-surya-prakash-r-611899256/" class="text-dark text-decoration-none" title="To view our profile, Click here">
-                        <img src="./linkedin-logo.png" alt="linkedin-logo" style="height: 20px; padding-top: 5px;"> LinkedIn
-                    </a>
-                </p>
+            <div class="col-lg-8 content">
+              <h2>Full Stack Developer.</h2>
+              <p class="fst-italic py-3">
+                Frontend Development ,Backend Development (Java & Spring Boot)
+                ,Database Management and Version Control & Deployment .
+              </p>
+              <div class="row">
+                <div class="col-lg-6">
+                  <ul>
+                    <li>
+                      <i class="bi bi-chevron-right"></i>
+                      <strong>Date Of Birth:</strong> <span>22 April 2003</span>
+                    </li>
+                    <!-- <li><i class="bi bi-chevron-right"></i> <strong>Website:</strong> <span>www.example.com</span></li> -->
+                    <li>
+                      <i class="bi bi-chevron-right"></i>
+                      <strong>Phone:</strong> <span>+91 91596-97001</span>
+                    </li>
+                    <li>
+                      <i class="bi bi-chevron-right"></i>
+                      <strong>City:</strong> <span>Chennai, India</span>
+                    </li>
+                  </ul>
+                </div>
+                <div class="col-lg-6">
+                  <ul>
+                    <!-- <li><i class="bi bi-chevron-right"></i> <strong>Age:</strong> <span>30</span></li> -->
+                    <li>
+                      <i class="bi bi-chevron-right"></i>
+                      <strong>Degree:</strong>
+                      <span>Bachloer Of Technology</span>
+                    </li>
+                    <li>
+                      <i class="bi bi-chevron-right"></i>
+                      <strong>Email:</strong>
+                      <span>jayasuryaprakashr@gmail.com</span>
+                    </li>
+                    <li>
+                      <i class="bi bi-chevron-right"></i>
+                      <strong>Freelance:</strong> <span>Available</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <p class="py-3">
+                I am a dedicated Full Stack Developer with expertise in Java,
+                Spring Boot, frontend technologies, and database management.
+                Passionate about problem-solving and building scalable software
+                solutions, I stay updated with the latest industry trends. My
+                ability to work effectively in a team allows me to collaborate
+                on innovative projects and deliver impactful results. I thrive
+                in dynamic environments, applying both technical skills and
+                analytical thinking to create efficient solutions.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- /About Section -->
+
+      <!-- Skills Section -->
+      <section id="skills" class="skills section light-background">
+        <!-- Section Title -->
+        <div class="container section-title" data-aos="fade-up">
+          <h2>Skills</h2>
+          <p>
+            I have a strong proficiency in frontend and backend development,
+            specializing in HTML/CSS, JavaScript, React, Java, Spring Boot, and
+            SQL, with expertise in building scalable and efficient applications.
+          </p>
+        </div>
+        <!-- End Section Title -->
+
+        <div class="container" data-aos="fade-up" data-aos-delay="100">
+          <div class="row skills-content skills-animation">
+            <div class="col-lg-6">
+              <div class="progress">
+                <span class="skill"
+                  ><span>HTML/CSS</span> <i class="val">90%</i></span
+                >
+                <div class="progress-bar-wrap">
+                  <div
+                    class="progress-bar"
+                    role="progressbar"
+                    aria-valuenow="90"
+                    aria-valuemin="0"
+                    aria-valuemax="100"
+                  ></div>
+                </div>
+              </div>
+              <!-- End Skills Item -->
+
+              <div class="progress">
+                <span class="skill"
+                  ><span>JavaScript</span> <i class="val">80%</i></span
+                >
+                <div class="progress-bar-wrap">
+                  <div
+                    class="progress-bar"
+                    role="progressbar"
+                    aria-valuenow="80"
+                    aria-valuemin="0"
+                    aria-valuemax="100"
+                  ></div>
+                </div>
+              </div>
+              <!-- End Skills Item -->
+
+              <div class="progress">
+                <span class="skill"
+                  ><span>React.js</span> <i class="val">70%</i></span
+                >
+                <div class="progress-bar-wrap">
+                  <div
+                    class="progress-bar"
+                    role="progressbar"
+                    aria-valuenow="70"
+                    aria-valuemin="0"
+                    aria-valuemax="100"
+                  ></div>
+                </div>
+              </div>
+              <!-- End Skills Item -->
+            </div>
+
+            <div class="col-lg-6">
+              <div class="progress">
+                <span class="skill"
+                  ><span>Java</span> <i class="val">85%</i></span
+                >
+                <div class="progress-bar-wrap">
+                  <div
+                    class="progress-bar"
+                    role="progressbar"
+                    aria-valuenow="85"
+                    aria-valuemin="0"
+                    aria-valuemax="100"
+                  ></div>
+                </div>
+              </div>
+              <!-- End Skills Item -->
+
+              <div class="progress">
+                <span class="skill"
+                  ><span>Spring Boot</span> <i class="val">80%</i></span
+                >
+                <div class="progress-bar-wrap">
+                  <div
+                    class="progress-bar"
+                    role="progressbar"
+                    aria-valuenow="80"
+                    aria-valuemin="0"
+                    aria-valuemax="100"
+                  ></div>
+                </div>
+              </div>
+              <!-- End Skills Item -->
+
+              <div class="progress">
+                <span class="skill"
+                  ><span>SQL</span> <i class="val">90%</i></span
+                >
+                <div class="progress-bar-wrap">
+                  <div
+                    class="progress-bar"
+                    role="progressbar"
+                    aria-valuenow="90"
+                    aria-valuemin="0"
+                    aria-valuemax="100"
+                  ></div>
+                </div>
+              </div>
+              <!-- End Skills Item -->
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- /Skills Section -->
+
+      <!-- Resume Section -->
+      <section id="resume" class="resume section">
+        <!-- Section Title -->
+        <div class="container section-title" data-aos="fade-up">
+          <h2>Resume</h2>
+          <p>
+            I am a passionate Full Stack Developer with expertise in Java,
+            Spring Boot, React.js, and database management. I hold a Bachelor's
+            degree in Electronics and Communication Engineering from SASTRA
+            University and have gained hands-on experience through internships
+            and projects, including enterprise-level Mobile Device Management
+            and a Bus Ticket Booking System. With strong problem-solving skills,
+            logical thinking, and a deep understanding of modern technologies, I
+            strive to build scalable and efficient software solutions. I have
+            successfully completed 550+ coding challenges, continuously
+            improving my skills while exploring new technologies and
+            innovations.
+          </p>
+        </div>
+        <!-- End Section Title -->
+
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+  
+              <h3 class="resume-title">Education</h3>
+              <div class="resume-item">
+                <h4> Bachelor of Technology in Electronics and
+                  Communication Engineering</h4>
+                <h5>Oct 2020- July 2024</h5>
+                <p><em> SASTRA DEEMED UNIVERSITY, Thanjavur, Tamil Nadu</em></p>
                 <p>
-                    <a href="https://drive.google.com/drive/folders/1y8Jp_tMwNsYIh64B3RRR0nZ8SuI-z1oF?usp=sharing" target="_blank" class="btn btn-primary">View Resume</a>
+                  I completed my B.Tech in Electronics and Communication Engineering (ECE) from SASTRA Deemed University, Thanjavur, with a CGPA of 7.64/10. My academic journey equipped me with a strong foundation in engineering principles, problem-solving, and technical skills, enabling me to excel in software development and full-stack technologies.
                 </p>
+              </div>
+              <!-- Edn Resume Item -->
+
+              <div class="resume-item">
+                <h4> Java Full Stack Course</h4>
+                <h5>July 2024– Sept 2024</h5>
+                <p><em> GUVI Institute, IITM Research Park, Chennai</em></p>
+                <p>
+                  Coursework: Frontend Development ,Backend Development (Java & Spring Boot) ,Database Management and
+                  Version Control & Deployment .
+                </p>
+              </div>
+              <br>
+              <!-- Edn Resume Item -->
+              <h3 class="resume-title">Achievements</h3>
+
+              <div class="resume-item pb-0">
+                <!-- <h4>Brandon Johnson</h4> -->
+                <!-- <p>
+                  <em
+                    >Innovative and deadline-driven Graphic Designer with 3+
+                    years of experience designing and developing user-centered
+                    digital/print marketing material from initial concept to
+                    final, polished deliverable.</em
+                  >
+                </p> -->
+                <ul>
+                  <li>6th Place- Frontend Web Championship by Guvi Institute (2024): Ranked among the top 6 out of 500
+                    participants. Solved 280 out of 300 problems on topics including HTML, CSS, Bootstrap, and JavaScript,
+                    showcasing strong frontend development skills.<a target="_blank" href="https://www.guvi.in/mlp/webkata-contest-leaderboard/">Link</a></li>
+                  <li> Coding Challenges: Completed over 550+ challenges on Guvi’s CodeKata and Webkata platforms, honing
+                    problem-solving skills and advancing technical proficiency</li>
+                  <!-- <li>alice.barkley@example.com</li> -->
+                </ul>
+              </div>
+              <!-- Edn Resume Item -->
+              <!-- <br> -->
+              <h3 class="resume-title pt-2">Interest and Extra Curriculars</h3>
+
+              <div class="resume-item pb-0">
+                <!-- <h4>Brandon Johnson</h4> -->
+                <!-- <p>
+                  <em
+                    >Innovative and deadline-driven Graphic Designer with 3+
+                    years of experience designing and developing user-centered
+                    digital/print marketing material from initial concept to
+                    final, polished deliverable.</em
+                  >
+                </p> -->
+                <ul>
+                  <li> I have a keen interest in electronics and trying new technologies and I like traveling to new places and
+                    experiencing different cultures and Volunteering.</li>
+                  <li>  Engaged in honing Java programming skills through active participation and consistent practice on the
+                    HackerRank platform, focusing on solving diverse coding challenges.</li>
+                  <!-- <li>alice.barkley@example.com</li> -->
+                </ul>
+              </div>
+              <!-- Edn Resume Item -->
             </div>
+
+            
+
+            <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
+              <h3 class="resume-title">Professional Experience</h3>
+              <div class="resume-item">
+                <h4> Software Engineer</h4>
+                <h5> Dec 2024– Present</h5>
+                <p><em>Vaken Technologies– Tiruchirappalli </em></p>
+                <ul>
+                  <li>
+                    Developed a Mobile Device Management (MDM) Backend– Built a scalable Java Spring Boot backend
+ integrated with Google’s Android Management API (AMAPI) for enterprise device management.</li>
+                  <li>
+                    Implemented Device Enrollment & Policy Management– Automated Zero-Touch Enrollment, QR
+                    code-based provisioning, and enforced security policies (password rules, app restrictions, factory reset
+                    protection).</li>
+                  <li>
+                    Enabled Remote Device Actions– Designed APIs to remotely lock, wipe, reboot, and reset Android devices,
+ ensuring enterprise security and compliance.</li>
+                  <li>
+                    Managed Database with MySQL– Stored device metadata, policy configurations, and compliance logs in
+                    MySQL, ensuring efficient data management and retrieval.</li>
+                  <li>
+                    Enhanced Security & API Performance– Integrated OAuth 2.0 authentication, JWT-based security, and
+                    Spring Boot Actuator for monitoring API health and logging.
+                  </li>
+                </ul>
+              </div>
+              <!-- Edn Resume Item -->
+
+              <div class="resume-item">
+                <h4>Software Engineer Intern</h4>
+                <h5>Oct 2024– Dec 2024</h5>
+                <p><em>Shiash Info Solutions– Sholinganallur, Chennai</em></p>
+                <ul>
+                  <li>
+                    Developed Full Stack Web Applications– Built and deployed applications using Java, Spring Boot (Backend)
+                    and React.js (Frontend), ensuring seamless user experiences.</li>
+                  <li>
+                    Frontend Development– Created responsive UI components using React.js, HTML, CSS, and JavaScript,
+                    improving website interactivity and performance.</li>
+                  <li>
+                    Backend Development with Spring Boot & Spring MVC– Designed RESTful APIs, implemented
+ microservices architecture, and integrated Spring Data JPA with SQL databases.</li>
+                  <li>
+                    Database Management & SQL– Designed relational database schemas, wrote optimized SQL queries, and
+ managed data persistence with MySQL/PostgreSQL.</li>
+                </ul>
+              </div>
+              <!-- Edn Resume Item -->
+            </div>
+          </div>
         </div>
+      </section>
+      <!-- /Resume Section -->
+       <!-- Projects Section -->
+<section id="project" class="portfolio section py-5">
+  <div class="container">
+    <!-- Section Title -->
+    <div class="container section-title text-start" data-aos="fade-up">
+      <h2 class="fw-bold">Projects</h2>
+      <p class="text-muted">Explore my technical projects demonstrating full-stack development capabilities and problem-solving skills.</p>
+    </div>   
+    <!-- End Section Title -->
 
-        <div class="row">
-            <div class="col-lg-6 mb-3">
-                <div>
-                    <h2>Profile</h2>
-                    <hr>
-                    <p>
-                        I am enthusiastic about technology and have strong technical skills, as well as interpersonal and problem-solving abilities for working effectively in a team. I enjoy applying my knowledge and skills to create solutions for various domains.
-                    </p>
-                </div>
-
-                <div>
-                    <h2>Skills</h2>
-                    <hr>
-                    <h3 class="text-center">Technical Skills</h3>
-                    <div class="progress-container">
-                        <span class="progress-label">Java:</span>
-                        <progress class="progress-bars" value="75" max="100"></progress>
-                    </div>
-                    <div class="progress-container">
-                        <span class="progress-label">Bootstrap:</span>
-                        <progress class="progress-bars" value="65" max="100"></progress>
-                    </div>
-                    <div class="progress-container">
-                        <span class="progress-label">SpringBoot:</span>
-                        <progress class="progress-bars" value="55" max="100"></progress>
-                    </div>
-                    <div class="progress-container">
-                        <span class="progress-label">MySQL:</span>
-                        <progress class="progress-bars" value="60" max="100"></progress>
-                    </div>
-                    <div class="progress-container">
-                        <span class="progress-label">Deployment:</span>
-                        <progress class="progress-bars" value="70" max="100"></progress>
-                    </div>
-                </div>
-
-                <div>
-                    <h3 class="text-center">Additional Skills</h3>
-                    <div class="progress-container">
-                        <span class="progress-label">Project Management: </span>
-                        <progress class="progress-bars" value="75" max="100"></progress>
-                    </div>
-                    <div class="progress-container">
-                        <span class="progress-label">Volunteering: </span>
-                        <progress class="progress-bars" value="65" max="100"></progress>
-                    </div>
-                    <div class="progress-container">
-                        <span class="progress-label">Fundraising: </span>
-                        <progress class="progress-bars" value="55" max="100"></progress>
-                    </div>
-                    <div class="progress-container">
-                        <span class="progress-label">Business Development: </span>
-                        <progress class="progress-bars" value="60" max="100"></progress>
-                    </div>
-                </div>
-                <br>
-
-                <div>
-                    <h2>Education</h2>
-                    <hr>
-                    <p>Bachelor of Technology (Electronics and Communication Engineering) - <b>2020-24</b><br>
-                      SASTRA Deemed University, Thanjavur, Tamil Nadu. CGPA: 7.64</p>
-                    <p>State Board of Tamil Nadu, Class XII - <b>2019-20</b><br>
-                      A.R.R. Matric Hr Sec School, Kumbakonam, Tamil Nadu, 63.66%</p>
-                    <p>State Board of Tamil Nadu, Class X - <b>2017-18</b><br>
-                      A.R.R. Matric Hr Sec School, Kumbakonam, Tamil Nadu, 75.2%</p>
-                </div>
+    <div class="row g-4">
+      <!-- Project Card -->
+      <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+        <div class="card project-card h-100 shadow-sm">
+          <img src="assets/img/project/mobile.jpg" class="card-img-top" alt="Weather API Application" />
+          <div class="card-body">
+            <h4 class="card-title">Mobile Device Management Application</h4>
+            <p class="card-text text-muted description">
+              Developed a backend system using Java Spring Boot & Google's AMAPI to help enterprises securely manage Android devices. Features include automated enrollment, security policies, remote control, and monitoring.
+            </p>
+            <div class="tech-tags mb-3">
+              <span class="badge bg-dark text-white">Java</span>
+              <span class="badge bg-dark text-white">Spring Boot</span>
+              <span class="badge bg-dark text-white">MySQL</span>
+              <span class="badge bg-dark text-white">RESTful API</span>
+              <span class="badge bg-dark text-white">GitLab</span>
             </div>
-
-            <div class="col-lg-6 mb-3">
-                <div>
-                    <h2>Projects</h2>
-                    <hr>
-
-                    <p><b>Bus Ticket Booking System</b> (2024)<br>
-                        A robust system for managing bus ticket bookings, built with Spring Boot. The application supports features like seat selection, payment processing, and user management. This project demonstrates backend proficiency and integration capabilities. <a href="https://github.com/JAYASURYAJSP03/BusTicketBookingSystem" class="text-primary" target="_blank">GitHub</a>
-                    </p>
-
-                    <p><b>Medical Appointment Booking System</b> (2024)<br>
-                      A comprehensive Spring Boot-based system designed to facilitate appointment booking for hospitals. The platform allows doctors to schedule availability and manage patient appointments seamlessly. Patients can book appointments with their preferred doctors, view schedules, and receive notifications. <a href="https://github.com/JAYASURYAJSP03/MedicalAppointmentBookingSystem" class="text-primary" target="_blank">GitHub</a>
-                    </p>
-
-                    <p><b>Employee Management System</b> (2024)<br>
-                      A RESTful API built using Spring Boot, enabling efficient management of employee records stored in MySQL. Features include adding, updating, viewing, and deleting employee details. The system ensures data integrity and provides a robust backend solution. <a href="https://github.com/JAYASURYAJSP03/EmployeeManagementSystem" class="text-primary" target="_blank">GitHub</a>
-                    </p>
-
-                    <p><b>Product Catalog System using Spring Data JPA</b> (2024)<br>
-                      This project simplifies product management for businesses. Users can add, edit, and categorize products, and utilize filtering options to find specific items based on categories. The backend leverages Spring Data JPA for efficient database interaction. <a href="https://github.com/JAYASURYAJSP03/ProductCatalogSystem" class="text-primary" target="_blank">GitHub</a>
-                    </p>
-
-                    
-                </div>
-
-                <div>
-                    <h2>Achievements</h2>
-                    <hr>
-                    <p>6th Place - *Frontend Web Championship* by Guvi Institute (2024): Ranked 6th among 500 participants, solving 280 out of 300 problems in HTML, CSS, Bootstrap, and JavaScript. <a href="https://www.guvi.in/mlp/webkata-contest-leaderboard/" class="text-primary" target="_blank">Leaderboard</a></p>
-
-                    <p>Completed 550+ coding challenges on Guvi’s CodeKata and Webkata platforms, demonstrating strong problem-solving skills.</p>
-                </div>
-
-                <div>
-                    <h2>Interest and Extra-Curriculars</h2>
-                    <hr>
-                    <p>Engaged in solving coding challenges on Guvi’s platform, interested in electronics, exploring new technologies, and traveling to experience different cultures. Active in volunteering activities.</p>
-                </div>
+            <div class="project-links d-flex gap-2">
+              <a href="https://developers.google.com/android/management/reference/rest" target="_blank" class="btn btn-outline-dark btn-sm">Reference</a>
             </div>
+          </div>
         </div>
+      </div>
+      <!-- End Project Card -->
+
+      <!-- Bus Ticket Booking -->
+      <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
+        <div class="card project-card h-100 shadow-sm">
+          <img src="assets/img/project/bus.jpg" class="card-img-top" alt="Online Bus Ticket Booking App" />
+          <div class="card-body">
+            <h4 class="card-title">Online Bus Ticket Booking App</h4>
+            <p class="card-text text-muted description">
+              A bus ticket booking system with secure registration, seat availability, and admin management. Built using Spring Data JPA, PostgreSQL, and RESTful APIs for scalability.
+            </p>
+            <div class="tech-tags mb-3">
+              <span class="badge bg-dark text-white">Java</span>
+              <span class="badge bg-dark text-white">Spring Boot</span>
+              <span class="badge bg-dark text-white">Spring Data JPA</span>
+              <span class="badge bg-dark text-white">Thymeleaf</span>
+              <span class="badge bg-dark text-white">MySQL</span>
+              <span class="badge bg-dark text-white">GitHub</span>
+            </div>
+            <div class="project-links d-flex gap-2">
+              <a href="https://github.com/JAYASURYAJSP03/BusTicketBookingSystem" target="_blank" class="btn btn-outline-dark btn-sm">Code</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- End Project Card -->
+
+      <!-- Medical Appointment System -->
+      <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+        <div class="card project-card h-100 shadow-sm">
+          <img src="assets/img/project/doctor.jpg" class="card-img-top" alt="Medical Appointment Booking App" />
+          <div class="card-body">
+            <h4 class="card-title">Medical Appointment Booking App</h4>
+            <p class="card-text text-muted description">
+              A hospital booking system allowing patients & doctors to schedule appointments, manage medications, and perform CRUD operations with secure authentication.
+            </p>
+            <div class="tech-tags mb-3">
+              <span class="badge bg-dark text-white">Java</span>
+              <span class="badge bg-dark text-white">Spring Boot</span>
+              <span class="badge bg-dark text-white">Spring Data JPA</span>
+              <span class="badge bg-dark text-white">Thymeleaf</span>
+              <span class="badge bg-dark text-white">MySQL</span>
+              <span class="badge bg-dark text-white">GitHub</span>
+            </div>
+            <div class="project-links d-flex gap-2">
+              <a href="https://github.com/JAYASURYAJSP03/MedicalAppointmentBookingSystem" target="_blank" class="btn btn-outline-dark btn-sm">Code</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- End Project Card -->
+
+      <!-- Employee Management System -->
+      <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
+        <div class="card project-card h-100 shadow-sm">
+          <img src="assets/img/project/employee.jpg" class="card-img-top" alt="Employee Management System" />
+          <div class="card-body">
+            <h4 class="card-title">Employee Management System</h4>
+            <p class="card-text text-muted description">
+              REST API allowing employees to register, retrieve data, and manage their records with MySQL integration.
+            </p>
+            <div class="tech-tags mb-3">
+              <span class="badge bg-dark text-white">Java</span>
+              <span class="badge bg-dark text-white">Spring Boot</span>
+              <span class="badge bg-dark text-white">Spring Data JPA</span>
+              <span class="badge bg-dark text-white">Thymeleaf</span>
+              <span class="badge bg-dark text-white">MySQL</span>
+              <span class="badge bg-dark text-white">GitHub</span>
+            </div>
+            <div class="project-links d-flex gap-2">
+              <a href="https://github.com/JAYASURYAJSP03/EmployeeManagementSystem" target="_blank" class="btn btn-outline-dark btn-sm">Code</a>
+              <!-- <a href="#" class="btn btn-outline-dark btn-sm">Preview</a> -->
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- End Project Card -->
     </div>
+  </div>
+</section>
+<!-- /Projects Section -->
+
+      <!-- Contact Section -->
+      <section id="contact" class="contact section">
+        <!-- Section Title -->
+        <div class="container section-title" data-aos="fade-up">
+          <h2>Contact</h2>
+          <p>
+            Let's connect! Feel free to reach out for collaboration, project inquiries, or just to say hello. I'm always open to discussing new opportunities and ideas.
+          </p>
+        </div>
+        <!-- End Section Title -->
+
+        <div class="container" data-aos="fade-up" data-aos-delay="100">
+          <div class="row gy-4">
+            <div class="col-lg-10">
+              <div class="info-wrap">
+                <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="200">
+                  <i class="bi bi-geo-alt flex-shrink-0" data-bs-toggle="tooltip" title="Location"></i>
+                  <div>
+                    <h3>Address</h3>
+                    <p>CS3 Apparajitha Appartments, Madambakkam Guduvancheri, Tamil Nadu</p>
+                  </div>
+                </div>
+                <!-- End Info Item -->
+                
+                <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="300">
+                  <i class="bi bi-telephone flex-shrink-0" data-bs-toggle="tooltip" title="Call Us"></i>
+                  <div>
+                    <h3>Call Us</h3>
+                    <p><a href="tel:+919159697001">+91 91596 97001</a></p>
+                  </div>
+                </div>
+                <!-- End Info Item -->
+                
+                <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="400">
+                  <i class="bi bi-envelope flex-shrink-0" data-bs-toggle="tooltip" title="Email Us"></i>
+                  <div>
+                    <h3>Email Us</h3>
+                    <p>
+                      <a href="mailto:jayasuryaprakashr@gmail.com">jayasuryaprakashr@gmail.com</a>
+                    </p>
+                  </div>
+                </div>
+                
+
+                <!-- <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d48389.78314118045!2d-74.006138!3d40.710059!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25a22a3bda30d%3A0xb89d1fe6bc499443!2sDowntown%20Conference%20Center!5e0!3m2!1sen!2sus!4v1676961268712!5m2!1sen!2sus" frameborder="0" style="border:0; width: 100%; height: 270px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> -->
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31119.76035501265!2d80.04439566402954!3d12.845211297335487!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a52f7097f45e5f5%3A0x3d51f5557fe19225!2sGuduvancheri%2C%20Tamil%20Nadu!5e0!3m2!1sen!2sin!4v1738346059102!5m2!1sen!2sin"
+                  frameborder="0"
+                  style="border: 0; width: 100%; height: 270px"
+                  allowfullscreen=""
+                  loading="lazy"
+                  referrerpolicy="no-referrer-when-downgrade"
+                ></iframe>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- /Contact Section -->
+    </main>
+
+    <footer id="footer" class="footer position-relative light-background">
+      <div class="container">
+        <div class="copyright text-center">
+          <p>
+            © <span>Copyright</span>
+            <strong class="px-1 sitename">JSP</strong>
+            <span>All Rights Reserved</span>
+          </p>
+        </div>
+        <div class="credits">
+          <!-- All the links in the footer should remain intact. -->
+          <!-- You can delete the links only if you've purchased the pro version. -->
+          <!-- Licensing information: https://bootstrapmade.com/license/ -->
+          <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
+          Designed by <a href="#">Jaya Surya Prakash Ramalingam</a>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Scroll Top -->
+    <a
+      href="#"
+      id="scroll-top"
+      class="scroll-top d-flex align-items-center justify-content-center"
+      ><i class="bi bi-arrow-up-short"></i
+    ></a>
+
+    <!-- Preloader -->
+    <div id="preloader"></div>
+
+    <!-- Vendor JS Files -->
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/php-email-form/validate.js"></script>
+    <script src="assets/vendor/aos/aos.js"></script>
+    <script src="assets/vendor/typed.js/typed.umd.js"></script>
+    <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+    <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+    <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+    <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+    <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'));
+        var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+          return new bootstrap.Tooltip(tooltipTriggerEl);
+        });
+      });
+    </script>
     
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-</body>
+
+    <!-- Main JS File -->
+    <script src="assets/js/main.js"></script>
+  </body>
 </html>
